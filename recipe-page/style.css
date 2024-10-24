@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: 16px;
+    font-family: "Outfit";
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+h1{
+    width: 90%;
+    font-family: "Young Serif";
+}
+
+span{
+    font-weight: 600;
+}
+
+hr{
+    border-color: hsl(330, 100%, 98%);
+    width: 90%;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 40px;    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+.main-sec{
+    width: 90%;
+}
+
+.main-sec>img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.description{
+    width: 100%;
+    margin-top: 0;
+}
+
+.preparation_time{
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.preparation_time__list{
+    width: 80%;
+    padding: 0;
+    list-style: inside;
+    line-height: 200%;
+}
+
+.preparation_time__list>li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients-sec{
+    width: 90%;
+}
+
+.ingredients{
+    font-size: 2em;
+    color: hsl(14, 45%, 36%);
+    width: 90%;
+    margin-bottom: 0;
+    font-family: "Young Serif";
+}
+
+.ingredients__list{
+    list-style: inside;
+    width: 90%;
+    padding: 0;
+    line-height: 200%;
+}
+
+.ingredients__list>li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.instructions-sec{
+    width: 90%;
+}
+
+.instructions{
+    font-family: "Young Serif";
+    font-size: 2em;
+    color: hsl(14, 45%, 36%);
+    width: 100%;
+}
+
+.instructions__list{
+    padding: 0;
+    list-style: inside;
+    list-style-type: decimal;
+    line-height: 200%;
+    width: 100%;
+}
+
+.instructions__list>li{
+    margin-bottom: 20px;
+    
+}
+
+.instructions__list>li:last-child{
+    margin-bottom: 50px;
+}
+
+.instructions__list>li>p{
+    display: inline;
+}
+
+
+.instructions__list>li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition-sec{
+    width: 90%;
+}
+
+.nutrition-sec>hr{
+    width: 100%;
+}
+
+.nutrition-sec>div{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nutrition-sec>div:last-child{
+    margin-bottom: 30px;
+}
+
+.nutrition-sec>div>p>span{
+    color: hsl(14, 45%, 36%);
+}
+
+.nutrition{
+    font-family: "Young Serif";
+    width: 90%;
+    font-size: 2em;
+    color: hsl(14, 45%, 36%);
+    margin: 0;
+}
+
+.nutrition__description{
+    width: 90%;
+}
+
+
