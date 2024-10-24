@@ -203,6 +203,7 @@ hr{
         background-color: hsl(322, 100%, 98%);
         width: 90%;
         padding: 20px 0 0 20px;
+        border-radius: 10px;
     }
 
     .preparation_time{
