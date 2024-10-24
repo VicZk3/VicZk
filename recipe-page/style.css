@@ -165,4 +165,59 @@ hr{
     width: 90%;
 }
 
+@media (width < 767px){
+    body{
+        padding: 0;
+        margin: 0;
 
+    }
+
+    h1{
+        width: 90%;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .container{
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .container>section{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-sec>img{
+        border-radius: 0;
+    }
+
+    .description{
+        width: 90%;
+    }
+
+    .preparation_container{
+        background-color: hsl(322, 100%, 98%);
+        width: 90%;
+        padding: 20px 0 0 20px;
+    }
+
+    .preparation_time{
+        margin: 0;
+    }
+
+    .instructions{
+        width: 90%;
+    }
+
+    .instructions__list{
+        width: 90%;
+    }
+
+    .nutrition-sec>div{
+        width: 70%;
+    }
+}
