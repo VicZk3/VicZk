@@ -26,14 +26,34 @@ font-weight: 600;
 line-height: 72px; /* 112.5% */
 }
 
+h2{
+    color: var(--black, #1B1D1F);
+    /* submain */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
 
+h3{
+    color: var(--black, #1B1D1F);
+
+    /* sub_accent */
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 72px; /* 150% */
+}
 
 .blue_gradient{
     background: linear-gradient(270deg, #A5DEFF 0%, #FCFEFE 100%);
     padding-left: 89px;
+    padding-top: 20px;
 }
 
-.main-sec{
+.main-sec__container{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -99,6 +119,66 @@ line-height: 72px; /* 112.5% */
 .sub_text{
     width: 453px;
     color: var(--black, #1B1D1F);
+    /* main */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.facts-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    margin-bottom: 100px;
+}
+
+.facts-sec__title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facts-sec__description{
+    width: 772px;
+    color: var(--black, #1B1D1F);
+    text-align: center;
+    font-family:  "Montserrat";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.facts-sec__facts{
+    display: grid;
+    grid-template-rows: 375px 24px 96px; 
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.facts-sec__facts>img{
+    margin: auto;
+}
+
+.facts-sec__facts-title{
+    text-align: center;
+    margin: 0;
+    color: #1B1D1F;
+    /* haeder */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 100% */
+}
+
+.facts-sec__facts-description{
+    color: #1B1D1F;
+    width: 374px;
+    margin-top: 24px;
+    text-align: center;
     /* main */
     font-family: Montserrat;
     font-size: 16px;
