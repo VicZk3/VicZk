@@ -1,0 +1,260 @@
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+    --Josefin-Sans: "Josefin Sans";
+    --Alta: "Alta"
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 15px;
+}
+
+h1{
+    font-size: 5em;
+    text-transform: uppercase;
+    color: var(--White);
+    display: inline-block;
+    font-family: var(--Josefin-Sans);
+    
+}
+
+h2{
+    font-family: var(--Josefin-Sans);
+    font-size: 4em ;
+    line-height: 50px;
+}
+
+h3{
+    font-family: var(--Josefin-Sans);
+    text-transform: uppercase;
+    font-size: 3em ;
+    line-height: 40px;
+    color: var(--White);
+    margin-bottom: 30px;
+}
+
+a{
+    display: inline-block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1.1em;
+}
+
+p{
+    font-family: var(--Alta);
+    color: var(--Dark-Gray);
+}
+
+footer{
+    background-color: var(--Black);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-sec{
+    background: no-repeat url(/images/desktop/image-hero.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+
+}
+
+.header-container{
+    width: 90%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    margin-bottom: 100px;
+}
+
+.nav-list{
+    list-style: none;
+    font-family: var(--Alta);
+    height: 30px;
+
+}
+
+.nav-list>li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-list>li:last-child{
+    margin: 0;
+}
+
+.nav-list>li:hover{
+    color: var(--White);
+    span{
+        display: block;
+    }
+}
+
+.list-item{
+    color: var(--White);
+}
+
+.hero-title{
+    border: 2px solid white;
+    width: fit-content;
+    padding: 20px 60px 20px 20px;
+    margin-bottom: 100px;
+}
+
+.pointer{
+    display: none;
+    margin: auto;
+    width: 2em;
+    border-bottom: 2px solid var(--White);
+    border-radius: 30px 30px 30px 30px;
+}
+
+.main-sec{
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us{
+    position: relative;
+    width: 90%;
+    height: 600px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.about-us>img{
+    /* position: absolute; */
+    z-index: -1;
+    display: block;
+    /* width: 50%; */
+}
+
+.about-us-text{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-left: 5%;
+    left: -10%;
+    /* float: right; */
+}
+
+.our-creations{
+    width: 80%;
+    margin-bottom: 180px;
+}
+
+.our-creations-title-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.our-creations-title{
+    display: inline-block;
+}
+
+.our-creations-button{
+    font-family: var(--Alta);
+    font-size: larger;
+    display: inline-block;
+    width: 10%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    background-color: var(--White);
+    border: 3px solid var(--Very-Dark-Gray);
+    cursor: pointer;
+}
+
+
+.our-creations-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 450px);
+    gap: 30px;
+}
+
+.our-creations-cards>div{
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 30px;
+}
+
+.card-deep-earth{
+    background-image: url(/images/desktop/image-deep-earth.jpg);
+}
+
+.card-arcade{
+    background-image: url(/images/desktop/image-night-arcade.jpg);
+}
+
+.card-soccer{
+    background-image: url(/images/desktop/image-soccer-team.jpg);
+}
+
+.card-crid{
+    background-image: url(/images/desktop/image-grid.jpg);
+}
+
+.card-above-vr{
+    background-image: url(/images/desktop/image-from-above.jpg);
+}
+
+.card-pocket{
+    background-image: url(/images/desktop/image-pocket-borealis.jpg);
+}
+
+.card-curiosity{
+    background-image: url(/images/desktop/image-curiosity.jpg);
+}
+
+.card-fisheye{
+    background-image: url(/images/desktop/image-fisheye.jpg);
+}
+
+.footer-container{
+    width: 80%;
+    margin: auto;
+}
+
+.logo-social-media{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media-list>li>img{
+    /* display: inline-block; */
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.footer-nav{
+    margin-bottom: 0;
+}
