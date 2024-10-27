@@ -62,7 +62,7 @@ footer{
 }
 
 .hero-sec{
-    background: no-repeat url(./images/desktop/image-hero.jpg);
+    background: no-repeat url(../images/desktop/image-hero.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
