@@ -273,6 +273,7 @@ button{
 
 #mobile-nav{
     position: absolute;
+    padding-right: 40px;
     height: 100vh;
     width: 100vw;
     background-color: var(--Black);
@@ -287,6 +288,10 @@ button{
     margin-bottom: 50px;
 }
 
+#humburger{
+    display: none;
+}
+
 .nav-list-mobile>li{
     display: block;
     font-size: 3em;
@@ -295,6 +300,10 @@ button{
 }
 
 @media (width < 768px){
+    #humburger{
+        display: inherit;
+    }
+
     .header-nav>ul{
         display: none;
     }
