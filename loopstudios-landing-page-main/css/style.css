@@ -276,7 +276,7 @@ button{
 #mobile-nav{
     position: absolute;
     padding-right: 40px;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: var(--Black);
     display: none;
@@ -302,6 +302,15 @@ button{
 }
 
 @media (width < 768px){
+    h1{
+        font-size: 3em;
+    }
+
+    .hero-title{
+        width: fit-content;
+        padding: 20px;
+    }
+
     #humburger{
         display: inherit;
     }
