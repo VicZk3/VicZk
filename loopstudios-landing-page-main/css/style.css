@@ -1,10 +1,11 @@
 
 :root{
+    /* color */
     --White: hsl(0, 0%, 100%);
     --Black: hsl(0, 0%, 0%);
     --Dark-Gray: hsl(0, 0%, 55%);
     --Very-Dark-Gray: hsl(0, 0%, 41%);
-
+    /* font */
     --Josefin-Sans: "Josefin Sans";
     --Alta: "Alta"
 }
@@ -14,6 +15,7 @@
 }
 
 body{
+    position: relative;
     margin: 0;
     font-size: 15px;
 }
@@ -59,6 +61,12 @@ footer{
     background-color: var(--Black);
     padding-top: 50px;
     padding-bottom: 50px;
+    height: fit-content;
+}
+
+button{
+    background-color: transparent;
+    border: 0;
 }
 
 .hero-sec{
@@ -68,11 +76,15 @@ footer{
     flex-direction: column;
     align-items: center;
     padding-right: 40px;
-
 }
 
 .header-container{
     width: 90%;
+}
+
+.humburger{
+    display: none;
+
 }
 
 .nav{
@@ -257,4 +269,101 @@ footer{
 
 .footer-nav{
     margin-bottom: 0;
+}
+
+#mobile-nav{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Black);
+    display: none;
+    z-index: 2;
+    top:0;
+}
+
+#mobile-nav>.nav{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.nav-list-mobile>li{
+    display: block;
+    font-size: 3em;
+    font-family: var(--Josefin-Sans);
+    margin-bottom: 20px;
+}
+
+@media (width < 768px){
+    .header-nav>ul{
+        display: none;
+    }
+
+    .humburger{
+        display: block;
+    }
+
+    .main-sec{
+        padding-top: 100px;
+    }
+    .about-us{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .about-us-text{
+        left: 0;
+        position: inherit;
+        width: 80%;
+
+    }
+    .about-us>img{
+        width: 80%;
+    }
+
+    .our-creations-title-container{
+        margin-bottom: 50px;
+    }
+
+    .our-creations-button{
+        width: 100px;
+    }
+
+    .our-creations-cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 15em);
+    }
+
+    .our-creations-cards>div{
+        background-size: fill contain;
+        background-repeat: no-repeat;
+    }
+
+    .footer-container{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-social-media{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-social-media>ul{
+        height: max-content;
+    }
+
+    .logo-social-media>ul>li{
+        display: block;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .footer-nav{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 }

@@ -30,7 +30,7 @@
 <body>
   <section class="hero-sec">
     <header class="header-container">
-      <nav class="nav">
+      <nav class="nav header-nav">
         <img src="./images/logo.svg" alt="logo">
         <ul class="nav-list">
           <li class="list-item"><a href="#">About</a><span class="pointer"></span></li>
@@ -39,6 +39,7 @@
           <li class="list-item"><a href="#">Products</a><span class="pointer"></span></li>
           <li class="list-item"><a href="#">Support</a><span class="pointer"></span></li>
         </ul>
+        <button id="humburger"><img src="./images/icon-hamburger.svg" alt="icon-hamburger"></button>
       </nav>
       <div class="hero-title">
         <h1>Immersive<br> experiences <br>that deliver</h1>
@@ -96,14 +97,6 @@
     <div class="footer-container">
       <div class="logo-social-media">
         <img src="./images/logo.svg" alt="logo">
-        <ul class="nav-list social-media-list">
-          <li class="list-item"><img src="./images/icon-facebook.svg" alt="icon-facebook"><span class="pointer" style="width: 1em;"></span></li>
-          <li class="list-item"><img src="./images/icon-twitter.svg" alt="icon-twitter"><span class="pointer" style="width: 1em;"></span></li>
-          <li class="list-item"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"><span class="pointer" style="width: 1em;"></span></li>
-          <li class="list-item"><img src="./images/icon-instagram.svg" alt="icon-instagram"><span class="pointer" style="width: 1em;"></li>
-        </ul>
-      </div>
-      <nav class="footer-nav nav">
         <ul class="nav-list">
           <li class="list-item"><a href="#">About</a><span class="pointer"></span></li>
           <li class="list-item"><a href="#">Careers</a><span class="pointer"></span></li>
@@ -111,11 +104,36 @@
           <li class="list-item"><a href="#">Products</a><span class="pointer"></span></li>
           <li class="list-item"><a href="#">Support</a><span class="pointer"></span></li>
         </ul>
+      </div>
+      <nav class="footer-nav nav">
+        <ul class="nav-list social-media-list">
+          <li class="list-item"><img src="./images/icon-facebook.svg" alt="icon-facebook"><span class="pointer" style="width: 1em;"></span></li>
+          <li class="list-item"><img src="./images/icon-twitter.svg" alt="icon-twitter"><span class="pointer" style="width: 1em;"></span></li>
+          <li class="list-item"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"><span class="pointer" style="width: 1em;"></span></li>
+          <li class="list-item"><img src="./images/icon-instagram.svg" alt="icon-instagram"><span class="pointer" style="width: 1em;"></li>
+        </ul>
         <p>© 2021 Loopstudios. All rights reserved.</p>
       </nav>
     </div>
   </footer>
 
+  <section id="mobile-nav">
+    <div class="nav">
+      <img src="./images/logo.svg" alt="logo">
+      <button id="close"><img src="./images/icon-close.svg" alt="icon-close"></button>
+    </div>
+    <nav class="nav">
+      <ul class="nav-list nav-list-mobile">
+        <li class="list-item"><a href="#">About</a><span class="pointer"></span></li>
+        <li class="list-item"><a href="#">Careers</a><span class="pointer"></span></li>
+        <li class="list-item"><a href="#">Events</a><span class="pointer"></span></li>
+        <li class="list-item"><a href="#">Products</a><span class="pointer"></span></li>
+        <li class="list-item"><a href="#">Support</a><span class="pointer"></span></li>
+      </ul>
+    </nav>
+  </section>
+
+  <script src="index.js"></script>
 <!--   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
